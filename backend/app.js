@@ -11,7 +11,7 @@ const path = require('path')
 const errorMiddleware = require('./middlewares/errors')
 
 //setting up config file
-if(process.env.NODE_ENV !== 'PRODUCTION') require('dotenv').dotenv.config({path: 'config/'})
+if(process.env.NODE_ENV !== 'PRODUCTION') require('dotenv').dotenv.config({path: 'backend/config/'})
 dotenv.config({ path: 'config/config.env'})
 
 app.use(express.json())
